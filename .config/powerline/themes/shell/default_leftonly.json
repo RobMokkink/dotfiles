@@ -30,6 +30,15 @@
           {
             "function": "powerline.segments.shell.last_pipe_status",
             "priority": 10
+          },
+	  {
+	      "function": "powerline_k8sstatus.k8sstatus",
+              "priority": 50,
+              "args": {
+                "show_namespace": false,
+                "show_user": false,
+                "show_version":false 
+	       }
           }
         ]
       }

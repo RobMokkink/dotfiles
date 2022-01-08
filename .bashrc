@@ -36,3 +36,12 @@ if [ -f `which powerline-daemon` ]; then
   POWERLINE_BASH_SELECT=1
   . /usr/share/powerline/bash/powerline.sh
 fi
+
+# K8S status for powerline
+k8sstatus() {
+    if [[ $POWERLINE_K8SSTATUS = "0" ]]; then
+        unset POWERLINE_K8SSTATUS
+    else
+        export POWERLINE_K8SSTATUS=0
+    fi
+}
