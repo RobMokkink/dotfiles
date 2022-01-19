@@ -28,6 +28,7 @@ unset rc
 
 # Aliases
 alias dotfiles='git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
+alias k8s='k8sstatus'
 
 # Powerline
 if [ -f `which powerline-daemon` ]; then
@@ -36,6 +37,9 @@ if [ -f `which powerline-daemon` ]; then
   POWERLINE_BASH_SELECT=1
   . /usr/share/powerline/bash/powerline.sh
 fi
+
+# Disable POWERLINE_K8SSTATUS by default
+export POWERLINE_K8SSTATUS=0
 
 # K8S status for powerline
 k8sstatus() {
