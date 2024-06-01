@@ -29,6 +29,9 @@ unset rc
 # Aliases
 alias dotfiles='git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
 alias k8s='k8sstatus'
+alias k='kubectl'
+complete -F __start_kubectl k
+alias kn="kubectl config set-context --current --namespace"
 
 # Powerline
 if [ -f `which powerline-daemon` ]; then
