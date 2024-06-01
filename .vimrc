@@ -1,3 +1,6 @@
+"Pathogen
+execute pathogen#infect()
+
 " Filetype detection, see http://vimdoc.sourceforge.net/htmldoc/filetype.html#:filetype-overview
 filetype on
 filetype plugin on
